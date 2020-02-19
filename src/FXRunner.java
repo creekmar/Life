@@ -82,6 +82,9 @@ public class FXRunner extends Application {
             lg.clearBoard(); update();
         });
 
+        Button undoBtn = new Button("Undo");
+        undoBtn.setOnAction(e -> {lg.undo(); update();});
+        
         final int size = width/lg.cols()-1;
 
         for(int i = 0; i < lg.rows(); i++) {
