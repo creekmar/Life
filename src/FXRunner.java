@@ -92,10 +92,6 @@ public class FXRunner extends Application {
                 Button b = new Button();
                 b.setMaxSize(size,size);
                 b.setMinSize(size,size);
-                if (lg.get(i, j))
-                    b.setStyle("-fx-background-color: #00FF00");
-                else
-                    b.setStyle("-fx-background-color: #FF0000");
 
                 final int finalI = i;
                 final int finalJ = j;
@@ -108,6 +104,7 @@ public class FXRunner extends Application {
                 grid.add(b, j, i);
             }
         }
+        update();
 
 
 

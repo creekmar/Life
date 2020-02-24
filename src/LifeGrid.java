@@ -10,9 +10,9 @@ public class LifeGrid
     public String toString() {
         StringBuilder out = new StringBuilder();
 
-        for(int r = 0; r < grid.length; r++){
-            for(int c = 0; c < grid.length; c++){
-                out.append("[").append(grid[r][c] ? "X" : " ").append("]");
+        for (boolean[] booleans : grid) {
+            for (int c = 0; c < grid.length; c++) {
+                out.append("[").append(booleans[c] ? "X" : " ").append("]");
             }
             out.append("\n");
         }

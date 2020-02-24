@@ -20,9 +20,8 @@ public class TextRunner {
             System.out.println("2: next");
             int option = scan.nextInt();
             if(option == 0)
-            {
                 break;
-            } else if (option == 1) {
+            else if (option == 1) {
                 System.out.print("Enter a row: ");
                 int row = scan.nextInt();
                 System.out.print("Enter a col: ");
